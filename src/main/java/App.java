@@ -9,7 +9,6 @@ import backtype.storm.generated.InvalidTopologyException;
 import backtype.storm.spout.SchemeAsMultiScheme;
 import backtype.storm.topology.TopologyBuilder;
 import backtype.storm.tuple.Fields;
-import bolts.Counter;
 import bolts.DataSplitter;
 import storm.kafka.KafkaSpout;
 import storm.kafka.SpoutConfig;
