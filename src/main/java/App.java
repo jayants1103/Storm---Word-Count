@@ -1,4 +1,4 @@
-package jayant.dataanalytics.kafka_consumer_storm;
+//package jayant.dataanalytics.kafka_consumer_storm;
 import bolts.DataCounter;
 import backtype.storm.Config;
 import backtype.storm.LocalCluster;
