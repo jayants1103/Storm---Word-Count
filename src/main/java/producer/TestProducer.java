@@ -32,17 +32,13 @@ public class TestProducer {
         String[] sentences = new String[]{ "Orlando	M	40	Python", "Lina	F	39	C#",
                 "John	M	30	Python", "Jane	F	32	Python", "Michelle	F	18	Python", "Daniel	M	20	C#" };
         for (long nEvents = 0; nEvents < 10; nEvents++) { 
-//               long runtime = new Date().getTime();  
-//              String ip = “192.168.2.” + rnd.nextInt(255); 
-//               String msg = runtime + “,www.example.com,” + ip;
+
         	String sentence = sentences[rnd.nextInt(sentences.length)];
         	System.out.println(sentence);
             KeyedMessage<String, String> data = new KeyedMessage<String, String>("test_topic",sentence);
-//            System.out.println("Sending message");
+
             producer.send(data);
-//            System.out.println("Message sent");
-        	
-         //   _collector.emit(new Values(sentence));
+
         }
        producer.close();
     }
